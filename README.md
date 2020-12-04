@@ -36,6 +36,11 @@ from .BodiesGroupFactry import bodiesGroupFactry
 - The list of bodies to be passed to the parameter is limited to bodies in the same component.
 - Creating groups within a "bodies" is supported, but you can't create groups within a group.
 
+## Issue:
+- Frequent selection and deselection in internal processing. Selections before processing will be deselected.
+
+- If you are using the UserInterface.selectEntity method, there is a [problem](https://forums.autodesk.com/t5/fusion-360-api-and-scripts/can-t-clear-the-activeselections/m-p/9673884) that cannot be cleared. This can lead to incorrect processing or a crash of the Fusion360.
+
 ## Action:
 Confirmed in the following environment.
 + Fusion360 Ver2.0.9313
